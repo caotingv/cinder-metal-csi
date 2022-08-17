@@ -1,0 +1,17 @@
+{{- if .Values.ceph.enabled -}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "ceph-monitor-endpoints"
+  namespace: {{ .Release.Namespace }}
+data:
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ printf "ceph-%s" .Values.ceph.cephClientName | quote }}
+  namespace: {{ .Release.Namespace }}
+type: Opaque
+data:
+{{- end }}

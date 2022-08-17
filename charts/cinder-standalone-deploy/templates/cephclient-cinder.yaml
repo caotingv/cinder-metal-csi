@@ -1,0 +1,13 @@
+{{- if .Values.ceph.enabled -}}
+apiVersion: ceph.rook.io/v1
+kind: CephClient
+metadata:
+  name: {{ .Values.ceph.cephClientName }}
+  namespace: {{ .Values.ceph.cephClusterNamespace }}
+spec:
+  caps:
+    mon: "allow *"
+    osd: "allow *"
+    mds: "allow *"
+    mgr: "allow *"
+{{- end -}}

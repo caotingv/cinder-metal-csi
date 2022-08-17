@@ -1,0 +1,7 @@
+apiVersion: v2
+description: Deploy noauth and Cinder for SQLite 
+home: https://github.com/kungze/cinder-standalone-deploy
+maintainers:
+- name: Kungze
+name: cinder-standalone-deploy
+version: 1.0.0
