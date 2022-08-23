@@ -1,0 +1,6 @@
+dependencies:
+- name: rabbitmq-standalone
+  repository: file://../rabbitmq-standalone
+  version: 1.0.0
+digest: sha256:7f6f3d12d9942cf61ed1e6ba38591128813f7d13d379f02bc9815b662e8152fb
+generated: "2022-08-23T10:57:09.860007441+08:00"
